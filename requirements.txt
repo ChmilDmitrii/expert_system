@@ -1,0 +1,5 @@
+Django
+openpyxl
+environs
+djangorestframework
+django-cors-headers
