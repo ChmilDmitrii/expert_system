@@ -1,3 +1,4 @@
+from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -23,6 +24,7 @@ class DiseaseView(APIView):
         return Response(definitions_disease(request.data))
 
 
+@api_view(('POST',))
 def import_data(request):
     import_()
-    return Response({})
+    return Response({'import': True})

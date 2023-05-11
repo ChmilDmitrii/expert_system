@@ -1,12 +1,12 @@
 from django.urls import path, re_path
 
 from expert_system.base import HybridRouter
-from expert_system.views import import_
+from expert_system.views import import_data
 from expert_system.views import SymptomView
 from expert_system.views import DiseaseView
 
 urlpatterns = [
-    path('import', import_, name='import'),
+    path('import', import_data, name='import'),
 ]
 
 router = HybridRouter()
