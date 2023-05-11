@@ -14,6 +14,8 @@ class Disease(models.Model):
 class Symptom(models.Model):
     uuid = models.UUIDField(unique=True, default=uuid.uuid4)
     title = models.CharField(max_length=100, unique=True)
+    code = models.CharField(max_length=100, unique=True)
+    flag = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
