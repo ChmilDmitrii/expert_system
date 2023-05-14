@@ -35,7 +35,7 @@ ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', default=['127.0.0.1', 'localhost'])
 # A list of origins that are authorized to make cross-site HTTP requests.
 # https://pypi.org/project/django-cors-headers/
 
-CORS_ALLOWED_ORIGINS = env('DJANGO_CORS_ALLOWED_ORIGINS', default=['http://localhost:3000'])
+CORS_ALLOWED_ORIGINS = env('DJANGO_CORS_ALLOWED_ORIGINS', default=['http://localhost:5173'])
 
 # Application definition
 
