@@ -100,7 +100,7 @@ export const Knowledge = () => {
         <Box className="App" sx={{ flexGrow: 1 }}>
             <SideBar />
             {rows ? (
-                <div style={{ maxWidth: '800px', margin: 'auto' }}>
+                <div style={{ maxWidth: '800px', margin: 'auto', paddingTop: '1rem' }}>
                     <TableContainer
                         style={{ background: '#fff' }}
                         component={Paper}

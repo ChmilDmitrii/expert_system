@@ -33,7 +33,9 @@ const SideBar = () => {
                         </Button>
                     </Link>
                 </Typography>
-                <Button color="inherit">ADMIN</Button>
+                <Link to={`${import.meta.env.VITE_BASE_URL}/admin`} style={{ marginLeft: '40px' }}>
+                    <Button variant="text" style={{ color: '#fff' }}>ADMIN</Button>
+                </Link>
             </Toolbar>
         </AppBar>
     )
