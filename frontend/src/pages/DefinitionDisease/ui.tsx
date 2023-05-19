@@ -151,8 +151,8 @@ export const Definition = () => {
                             <div>Возраст от: {answer.age_from}</div>
                             <div>Возраст до: {answer.age_to}</div>
                             <div>Описание: {answer.description}</div>
-                            <div>Муж. пол: {answer.is_female}</div>
-                            <div>Жен. пол: {answer.is_male}</div>
+                            <div>Муж. пол: {String(answer.is_female)}</div>
+                            <div>Жен. пол: {String(answer.is_male)}</div>
                             <div>Профилактика: {answer.prophylaxis}</div>
                             <div>Лечение: {answer.treatment}</div>
                         </div>

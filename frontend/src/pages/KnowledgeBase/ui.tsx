@@ -72,8 +72,8 @@ function Row(props: { row: DeireaType }) {
                                 <div>Возраст от: {row.age_from}</div>
                                 <div>Возраст до: {row.age_to}</div>
                                 <div>Описание: {row.description}</div>
-                                <div>Муж. пол: {row.is_female}</div>
-                                <div>Жен. пол: {row.is_male}</div>
+                                <div>Муж. пол: {String(row.is_female)}</div>
+                                <div>Жен. пол: {String(row.is_male)}</div>
                                 <div>Профилактика: {row.prophylaxis}</div>
                                 <div>Лечение: {row.treatment}</div>
                             </div>
