@@ -22,5 +22,5 @@ from expert_system.urls import router
 urlpatterns = [
     path('admin', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', include('expert_system.urls'))  # test
+    path('', include('expert_system.urls'))
 ]
